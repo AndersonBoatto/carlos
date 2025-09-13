@@ -16,6 +16,10 @@
             padding: 20px;
             text-align: center;
         }
+        header img {
+            max-width: 300px;
+            height: auto;
+        }
         h1 {
             margin: 0;
             font-weight: normal;
@@ -56,14 +60,36 @@
             margin-top: 30px;
             text-align: center;
         }
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 10px;
+            }
+            header img {
+                max-width: 90%;
+                height: auto;
+            }
+            .gallery {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .gallery img {
+                max-width: 100%;
+                border-radius: 5px;
+                box-shadow: none;
+            }
+            footer {
+                font-size: 0.8rem;
+                padding: 15px 10px;
+            }
+        }
     </style>
 </head>
 <body>
 <header>
-    <img src="logo.png" alt="Carlos Boatto Fotografia" style="max-width: 300px; height: auto;" />
-
+    <img src="logo.png" alt="Carlos Boatto Fotografia" />
 </header>
-
     <div class="container">
         <section>
             <h2>Galeria</h2>
@@ -72,8 +98,8 @@
                 <img src="Carol Miss--3.jpg" alt="Foto 2" />
                 <img src="Carol Miss-3981.jpg" alt="Foto 3" />
                 <img src="Ensaio Externo - Renata-61 2.jpg" alt="Foto 4" />
-                <img src="LUCAS1ANO-3191.jpg" alt="foto5"/>
-                <img src="LUCAS1ANO-3212.jpg" alt="foto6"
+                <img src="LUCAS1ANO-3191.jpg" alt="foto5" />
+                <img src="LUCAS1ANO-3212.jpg" alt="foto6" />
                 <!-- Adicione suas fotos aqui -->
             </div>
         </section>
@@ -89,4 +115,3 @@
     </footer>
 </body>
 </html>
-
