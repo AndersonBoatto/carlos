@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Carlos Boatto Fotografia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .contact {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="img/logo.png" alt="Carlos Boatto Fotografia" style="max-width: 300px; height: auto;" />
+
+</header>
+
+    <div class="container">
+        <section>
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="img/13012025-IMG_2872.jpg" alt="Foto 1" />
+                <img src="img/Carol Miss--3.jpg" alt="Foto 2" />
+                <img src="img/Carol Miss-3981.jpg" alt="Foto 3" />
+                <img src="img/Ensaio Externo - Renata-61 2.jpg" alt="Foto 4" />
+                <img src="img/LUCAS1ANO-3191.jpg" alt="foto5"/>
+                <img src="img/LUCAS1ANO-3212.jpg" alt="foto6"
+                <!-- Adicione suas fotos aqui -->
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contato</h2>
+            <p>Email: carlosboatto@icloud.com</p>
+            <p>Telefone: (14) 99109-8935</p>
+            <p>Instagram: <a href="https://www.instagram.com/carlosboattomidia/" target="_blank">@carlosboattomidia</a></p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Carlos Boatto Fotografia. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
